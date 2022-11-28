@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS2 tasks</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            text-align: center;
+            font-size:20px;
+            color: #FDF6E0;
+        }
+
+        .Header{
+            margin-bottom: 15px;
+            background:#55D4EB;
+            height: 10vh;
+            width:100%;
+        }
+        .main{
+            height: 35vh;
+        }
+        .body1{
+            margin-bottom: 15px;
+            background:#A0C263;
+            float:left;
+            width:calc( 35% - 15px) ;
+            height: 100%;
+        }
+        .body2{
+            background:#F5C531;
+            height:20vh;
+            float:right;
+            width:65%;
+            margin-bottom: 15px;
+        }
+        .body3{
+            background:#898989;
+            float:right;
+            width: 65%;
+            height: calc( 15vh - 15px);
+        }
+        .Footer{
+            background:#FFA500;
+            height: 10vh;
+            width:100%;
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="Header">
+            <h5>Header</h5>
+    </div>
+    <div class="main">        
+        <div class="body1"><h5>Sidebar</h5></div>
+        <div class="body2"><h5>Main Content</h5></div>
+        <div class="body3"><h5>Extra Content</h5></div>
+    </div>
+        <div class="Footer"><h5>Footer</h5></div>
+      </div>
+</body>
+</html>
