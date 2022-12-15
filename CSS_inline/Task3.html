@@ -1,1 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3</title>
+    <style>
+        body{
+            margin:0px;
+            box-sizing: content-box;
+            padding:0px;
+            font-size: 0px;
+        }
+        .container{
+            height: 100vh;
+            width: 100%;
+        }
+        .row1{
+            height:50vh;
+            width:100%;
+            background-color: #E70000;
+        }
+        .col{
+            height:100%;
+            width:65%;
+            display: inline-block;
+         }
+         .word1{
+            color: #FDF6E0; 
+            padding: 15px 10px 15px 30px;
+            font-size: 30px;
+         }
+         .word2{
+            color: #FDF6E0; 
+            padding: 15px 10px 15px 30px;
+            font-size: 15px;
+         }
+        .row2{
+            height:50vh;
+            width:100%;
+            background-color: #E70000;
+        }
+        .col3{
+            width:33%;
+            height:100%;
+            background-color:#571212;
+            margin-right:15px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .col4{
+            width:calc(33% - 15px);
+            height:100%;
+            background-color:#571212;
+            margin-right:15px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .col5{
+            width:calc(34% - 15px);
+            height:100%;
+            background-color:#571212;
+            display: inline-block;
+        }
+        .word3{
+            color: #FDF6E0; 
+            font-size: 15px;
+            padding:15px 10px 10px 10px;
+        }
+        .word4{
+            color: #FDF6E0; 
+            font-size: 10px;
+            padding:15px 10px 10px 10px;
+        }
+        .col1{
+            background-image:url("gaurav.png");
+        }
 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row1">
+            <div class="col">
+                <div class="word1">Down with the state</div>
+                <div class="word2">Abandon the left vs right paradigm and adopt new ideals, where consistency and logic reign supreme.</div>
+            </div>
+            <div class="col1"></div>
+        </div>
+        <div class="row2">
+            <div class="col3">
+                <div class="word3">But what about the roads?</div>
+                <div class="word4">You just don't understand economics,like supply and demand. Don't worry kiddo,where there's a demand there will be a supply;we'll all have our roads.</div>
+            </div>
+            <div class="col4">
+                <div class="word3">Is taxation theft?</div>
+                <div class="word4">If i came to your huse with some heavily armed buddies,demanded that you and your neighbors give me a percentage of your income,in return for some crappy monopolized services that you didn't ask for,would you consider that theft?</div>
+                </div>
+            <div class="col5">
+                <div class="word3">So,what you're saying is...?</div>
+                <div class="word4">Libertarians want to live in a world where gay couples can protect their poppy fields with fully automatic weapons.</div>
+                <div class="word4">A world where voluntaryism and property righs are treated with the highest respect.</div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
