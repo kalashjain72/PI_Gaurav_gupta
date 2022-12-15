@@ -8,16 +8,20 @@
     <style>
 body{
             margin:0px;
-            box-sizing: border-box;
+            box-sizing: content-box;
             padding:0px;
             font-size: 0px;
         }
 .container{
             height: 100vh;
             width: 100%;
+                
+        }
+.word{
             text-align: center;
-            color: #FDF6E0;
-            font-size: 0px;      
+            color: #FDF6E0; 
+            padding: 15px;
+            font-size: 20px;
         }
 .Header{
             height: 20vh;
@@ -55,6 +59,7 @@ body{
     height: calc(30% - 15px);
     width: 100%;
     background-color: #898989;
+
 }
 .footer{
     height: calc(20vh - 15px);
@@ -65,15 +70,15 @@ body{
 </head>
 <body>
     <div class="container">
-        <div class="Header"><h5>Header</h5></div>
+        <div class="Header"><div class="word"><h5>header</h5></div></div>
         <div class="main1">
-            <div class="sidebar"><h5>Sidebar</h5></div>
+            <div class="sidebar"><div class="word"><h5>sidebar</h5></div></div>
             <div class="main2">
-                <div class="maincontent"><h5>Main Content</h5></div>
-                <div class="extracontent"><h5>Extra Content</h5></div>
+                <div class="maincontent"><div class="word"><h5>main content</h5></div></div>
+                <div class="extracontent"><div class="word"><h5>extra content</h5></div></div>
             </div>
         </div>
-        <div class="footer"><h5>Footer</h5></div>
+        <div class="footer"><div class="word"><h5>footer</h5></div></div>
     </div>
 </body>
 </html>
