@@ -1,1 +1,80 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS2</title>
+    <style>
+body{
+            margin:0px;
+            box-sizing: border-box;
+            padding:0px;
+            font-size: 0px;
+        }
+.container{
+            height: 100vh;
+            width: 100%;
+            text-align: center;
+            color: #FDF6E0;
+            font-size: 0px;      
+        }
+.Header{
+            height: 20vh;
+            width: 100%;
+            background-color: #55D4EB;
+            margin-bottom: 15px;
+        }
+.main1{
+            height: calc(60vh - 15px);
+            width: 100%;
+            display: inline-block;
+            margin-bottom: 15px;
+            font-size: 0px;
+        }
+.sidebar {
+    height: calc(60vh - 15px);
+    width: 25% ;
+    background-color: #A0C263;
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: top;
+}
+.main2{
+    height: calc(60vh - 15px);
+    width: calc(75% - 15px);
+    display: inline-block;
+    
+}
+.maincontent{
+    height: 70%;
+    width: 100%;
+    background-color: #F5C531;
+    margin-bottom: 15px;
+}
+.extracontent{
+    height: calc(30% - 15px);
+    width: 100%;
+    background-color: #898989;
+}
+.footer{
+    height: calc(20vh - 15px);
+    width: 100%;
+    background-color: #FFA500;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="Header"><h5>Header</h5></div>
+        <div class="main1">
+            <div class="sidebar"><h5>Sidebar</h5></div>
+            <div class="main2">
+                <div class="maincontent"><h5>Main Content</h5></div>
+                <div class="extracontent"><h5>Extra Content</h5></div>
+            </div>
+        </div>
+        <div class="footer"><h5>Footer</h5></div>
+    </div>
+</body>
+</html>
