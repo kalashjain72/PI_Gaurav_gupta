@@ -10,7 +10,6 @@
                 box-sizing: border-box;
                 padding: 0px;
                 margin: 0px;
-
             }
            .head{
             display: flex;
@@ -40,15 +39,12 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-            }
-            .img1{
                 background-image: url("img-1.jpg") ;
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
-                width: 100%;
-                height:100%;
-                opacity: 0.4;
-                position: absolute;
+                opacity: 0.9;
+                position: relative;
+                background-blend-mode: multiply;
             }
             .col1{
                 font-size:40px;
@@ -72,7 +68,14 @@
                 border: 2px solid white;
                 border-radius: 10px;
                 padding: 4px;
+                }
+            .s1box1:hover{
                 background-color: #d0a904;
+ 
+            }
+            .s1box2:hover{
+                background-color: #d0a904;
+ 
             }
             .s1box2{
                 margin-right: 20px;
@@ -125,19 +128,15 @@
                 width:100%;
                 height: 70vh;
                 background-color: #222342;
-                position: relative;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-            }
-            .img2{
                 background-image: url("img-2.jpg") ;
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
-                width: 100%;
-                height:70vh;
-                opacity: 0.4;
-                position: absolute;
+                opacity: 0.9;
+                position: relative;
+                background-blend-mode: multiply;
             }
             .s3main{
                 display: flex;
@@ -169,8 +168,11 @@
                 border: 2px solid white;
                 border-radius: 10px;
                 padding: 4px;
-                background-color: #d0a904;
+                
                 margin-top: 40px;
+            }
+            .s3r3:hover{
+                background-color: #d0a904;
             }
             .main1{
                 display: flex;
@@ -231,15 +233,12 @@
                 position: relative;
                 justify-content: center;
                 align-items: center;
-             }
-             .img3{
                 background-image: url("img-4.jpg") ;
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
-                width: 100%;
-                height:100%;
-                opacity: 0.4;
-                position: absolute;
+                opacity: 0.9;
+                position: relative;
+                background-blend-mode: multiply;
              }
              .s4col1{
                 display: flex;
@@ -247,6 +246,9 @@
                 align-items: center;
                 justify-content:space-around;
                 width: 20%;
+            }
+            .s4c1row1{
+                border-radius: 50%;
             }
             .s4c1row2{
                 padding-top: 10px;
@@ -270,6 +272,7 @@
                 align-items: center;
                 width: 100%;
                 color: #464156;
+                margin-bottom:30px
             }
             .s5row1{
                 padding-top: 40px;
@@ -305,7 +308,7 @@
                 padding-bottom: 15px;
             }
             .s5r3crow5{
-                font-size: 1px;
+                font-size: 15px;
                 padding-bottom: 10px;
             }
              .opa{
@@ -315,11 +318,65 @@
                 border: 2px solid black;
                 border-radius: 20px;
                 padding: 10px;
+                margin-bottom: 15px;
              }
               .s5r3crow9:hover{
                 background-color: #d0a904;
                 color: #f7f7f0;
               }
+             /* .sec6{
+                display:flex;
+                width:100%;
+                height: 60vh;
+                background-color: #222342;
+                background-image: url("img-3.jpg") ;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                opacity: 0.9;
+                position: relative;
+                background-blend-mode: multiply;
+                flex-direction: column;
+                justify-content: center;
+             }
+             .s6row1{display: flex;
+                height:20%;
+                width: 40%;
+        
+             }
+             .s6r1col1{
+                font-size: 35px;
+                color: white;
+                padding: 60px;
+                padding-left: 60px; 
+                align-items: flex-end;
+            }
+            .s6r1col2{
+                display: flex;
+                width: 60%;
+
+            }
+
+             
+             .sec6img{
+                height: 15%;
+                width: 40%;
+                background-color: #3a376c;
+            }
+             .sec6img2{
+                height: 15%;
+                width: 40%;
+                background-color: #3a376c;
+             }
+             .sec6img:hover{
+                background-color: #d0a904;
+             }
+             .sec6img2:hover{
+                background-color: #d0a904;
+             }
+             .s6row2{
+                font-size: 10px;
+                color: white;
+             }*/
             
             
     </style>
@@ -470,9 +527,29 @@
                         </div>
                 </div>
             </section>
-            <section class="sec5">
+            /*<section class="sec6">
+                      <div class="s6row1">
+                        <div class="s6r1col1"><strong>Testimonials </strong>About US</div>
+                        <div class="s6r1col2"><img class="sec6img" src="larrow.png" alt="larrow"><img class="sec6img2" src="rarrow.png" alt="rarrow"></div>
+                      </div>                 
+                      <div class="s6row2">Lorem ipsum dolor sit amet consectetur adipisicing </div>
+                      <div class="s6row3">
+                        <div class="s6r3col1">
+                            <div class="s6r3c1row1"></div>
+                            <div class="s6r3c1row1"></div>
+                            <div class="s6r3c1row1"></div>
+                            <div class="s6r3c1row1"></div>
+                        </div>
+                        <div class="s6r3col2">
+                             <div class="s6r3c1row2"></div>
+                             <div class="s6r3c1row2"></div>
+                             <div class="s6r3c1row2"></div>
+                             <div class="s6r3c1row2"></div>
+                        </div>
 
-            </section>
+                             
+                        </div>
+            </section>*/
 
     </article>
 </body>
