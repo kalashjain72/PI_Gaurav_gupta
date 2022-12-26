@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance 2</title>
+    <style>
+            *{
+                box-sizing: border-box;
+                padding: 0px;
+                margin: 0px;
+
+            }
+           .head{
+            display: flex;
+            background-color: #FBFAFF;
+            width: 100%;
+           } 
+           .fig1{
+               padding-left: 90px;
+               width:35%;
+           }
+           nav{
+            display: flex;
+            justify-content: space-evenly;
+            width:50%;
+            align-items: center;
+            padding-left: 250px;
+            }
+            .fig2{
+                padding-top: 10px;
+            }
+            .sec1{
+                display:flex;
+                width:100%;
+                height: 70vh;
+                background-color: #222342;
+                position: relative;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .img1{
+                background-image: url("img-1.jpg") ;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                width: 100%;
+                height:100%;
+                opacity: 0.4;
+                position: absolute;
+            }
+            .col1{
+                font-size:40px;
+                color: #f7f7f0;
+            }
+            .col2{
+                font-size: 10px;
+                color: #f7f7f0;
+                padding-top: 10px;
+            }
+            .main{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+            .s1box1{
+                margin-right: 20px;
+                margin-top: 20px;
+                color: #f7f7f0;
+                border: 2px solid white;
+                border-radius: 10px;
+                padding: 4px;
+                background-color: #d0a904;
+            }
+            .s1box2{
+                margin-right: 20px;
+                margin-top: 20px;
+                color: #f7f7f0;
+                border: 2px solid white;
+                border-radius: 10px;
+                padding: 4px;
+            }
+            .sec2{
+                display: flex;
+                width:100%;
+                background-color: #f5f4fa;
+                padding-left: 50px;
+                padding-bottom: 50px;
+            }
+            .s2box1{
+                display:flex;
+                flex-direction: column;
+                color: #50425d;
+                width: 40%;
+                justify-content: center;
+            }
+            .s2b1box1{
+                padding-left: 90px;
+                padding-top: 40px;
+                font-size: 40px;
+            }
+            .s2b1box2{
+                padding-left: 90px;
+                padding-right: 70px;
+                padding-top: 15px;
+                font-size: 10px;
+            }
+            .s2b1box3{
+                padding-left: 90px;
+                padding-top: 15px;
+            }
+            .s2box2{
+                width:60%;
+                padding-top: 60px;
+                padding-left: 100px;
+            }
+            .fig3{
+                width: 70%;
+                height: 100%;
+            }
+            .sec3{
+                display:flex;
+                width:100%;
+                height: 70vh;
+                background-color: #222342;
+                position: relative;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .img2{
+                background-image: url("img-2.jpg") ;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                width: 100%;
+                height:70vh;
+                opacity: 0.4;
+                position: absolute;
+            }
+            .s3main{
+                display: flex;
+                width: 80%;
+                justify-content: center;
+                align-items: center;
+            }
+            .s3row2{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: #f7f7f0;
+                padding-top: 40px;
+            }
+            .s3r1col2{
+                font-size: 15px;
+                padding-left: 20px;
+                padding-top: 20px;
+
+            }
+            .s3r1col3{
+                font-size: 10px;
+                padding-left: 90px;
+                padding-top: 20px;
+            }
+            .s3r3{
+                color: #f7f7f0;
+                border: 2px solid white;
+                border-radius: 10px;
+                padding: 4px;
+                background-color: #d0a904;
+                margin-top: 40px;
+            }
+            .main1{
+                display: flex;
+                background-color: #f5f4fa;
+                width: 100%;
+                flex-direction: column;
+                padding-left: 120px;
+            }
+            .m1col1{
+                    padding-top: 40px;
+                    font-size: 40px;
+                    color: #474a5b;
+
+            }
+            .m1col2{
+                    font-size: 40px;
+                    color: #474a5b;
+            }
+            .m1col3{
+                padding-top: 20px;
+                font-size: 15px;
+                color: #474a5b;
+            }
+            .m1col4{
+                padding-top: 60px;
+                display: flex;
+                padding-left: 80px;
+                justify-content: space-between;
+                width:35% ;
+
+            }
+            .m1col5{
+                display: flex;
+                padding-top: 30px;
+                width: 90%;
+            }
+            .m1c5col1{
+                width: 30%;
+                margin-right: 15px;
+            }
+
+             .fig4{
+                width:100%;
+                height:44.6vh;
+                margin-bottom:15px;
+             }
+             .fig5{
+                width:100%;
+                height: 21vh;
+                margin-bottom: 15px;
+
+             }
+             .sec4{
+                display:flex;
+                width:100%;
+                height: 40vh;
+                background-color: #222342;
+                position: relative;
+                justify-content: center;
+                align-items: center;
+             }
+             .img3{
+                background-image: url("img-4.jpg") ;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                width: 100%;
+                height:100%;
+                opacity: 0.4;
+                position: absolute;
+             }
+             .s4col1{
+                display: flex;
+                flex-direction:column ;
+                align-items: center;
+                justify-content:space-around;
+                width: 20%;
+            }
+            .s4c1row2{
+                padding-top: 10px;
+                color:white;
+            }
+            .s4c1row3{
+                color: white;
+                font-size: 30px;
+            }
+            .s4c1row2:hover{
+                background-color: #d0a904;
+            }
+            .s4c1row3:hover{
+                background-color: #d0a904;
+            }
+            .sec5{
+                display:flex;
+                flex-direction: column;
+                background-color: #f5f4fa;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                color: #464156;
+            }
+            .s5row1{
+                padding-top: 40px;
+                font-size: 40px;
+                padding-bottom: 40px;
+            }
+            .s5row3{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width:90%;
+                margin-top: 30px;
+            }
+            .s5r3col{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border: 2px solid #fbfaff;
+                width: 30%;
+                background-color: #fbfaff;
+                margin-right: 15px;
+
+            }
+            .s5r3crow1{
+                font-size: 30px;
+            }
+            .s5r3crow2{
+                 font-size: 10px;
+                 padding-top: 10px;
+            }
+            .s5r3crow4{
+                font-size: 40px;
+                padding-bottom: 15px;
+            }
+            .s5r3crow5{
+                font-size: 1px;
+                padding-bottom: 10px;
+            }
+             .opa{
+                opacity: 0.2;
+             }
+             .s5r3crow9{
+                border: 2px solid black;
+                border-radius: 20px;
+                padding: 10px;
+             }
+              .s5r3crow9:hover{
+                background-color: #d0a904;
+                color: #f7f7f0;
+              }
+            
+            
+    </style>
+</head>
+<body>
+    <article>
+        <header class="head">
+            <figure class="fig1"><img src="head_logo.jpg" alt="photo"></figure>
+            <nav>
+                <div>HOME</div>
+                <div>ABOUT</div>
+                <div>SERVICES</div>
+                <div>PORTFOLIO</div>
+                <div>PRICE</div>
+                <div>BLOG</div>
+            </nav>
+            <figure class="fig2"><img src="mail.jpg" alt="photo"></figure>
+        </header>
+        <section class="sec1">
+            <div class="img1"></div>
+                <div class="col1">We Will <strong>Make</strong>Your <strong>Business</strong></div>
+                <div class="col1">Great Again</div>
+                <div class="col2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum asperiores nulla totam vel error assumenda aliquid iste corrupti </div>
+                <div class="main">
+                <div class="s1box1">CONTACT US</div>
+                <div class="s1box2">DISCOVER NOW</div>
+            </div>
+        </section>
+        <section class="sec2">
+            <div class="s2box1">
+                <div class="s2b1box1">Hello <strong>World</strong></div>
+                <div class="s2b1box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptates hic ea, aliquid, accusamus blanditiis ullam repudiandae deleniti distinctio quidem iste qui tenetur laborum! Odio necessitatibus quidem molestias quae provident!</div>
+                <div class="s2b1box3"><img src="diamond.png" alt="diamond">Exploring the area of activity</div>
+                <div class="s2b1box3"><img src="wallet.png" alt="wallet">Competitive analysis</div>
+                <div class="s2b1box3"><img src="trophy.png" alt="trophy">Competitive analysis</div>
+            </div>
+            <div class="s2box2"><img  class="fig3" src="img-3.jpg" alt="img-3"></div>
+            </section>
+            <section class="sec3">
+                <div class="img2"></div>
+                <div class="col1">Some of our <strong>best services</strong></div>
+                <div class="col1">to solve your problems</div>
+                <div class="s3main">
+                    <div class="s3row2">
+                        <div class="s3r1col1"><img src="plane.png" alt="plane"></div>
+                        <div class="s3r1col2">Digital Marketing</div>
+                        <div class="s3r1col3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem magnam numquam reprehenderit, tenetur sed nesciunt officiis cupiditate doloribus fuga </div>
+                    </div>
+                    <div class="s3row2">
+                        <div class="s3r1col1"><img src="setting.png" alt="setting"></div>
+                        <div class="s3r1col2">Web Development</div>
+                        <div class="s3r1col3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem magnam numquam reprehenderit, tenetur sed nesciunt officiis cupiditate doloribus fuga </div>
+                    </div>
+                    <div class="s3row2">
+                        <div class="s3r1col1"><img src="sketch.png" alt="sketch"></div>
+                        <div class="s3r1col2">UI/UX Design</div>
+                        <div class="s3r1col3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem magnam numquam reprehenderit, tenetur sed nesciunt officiis cupiditate doloribus fuga </div>
+                    </div>
+                </div>
+                <div class="s3r3">ORDER A SERVICE</div>
+            </section>
+            <main class="main1">
+                   <div class="m1col1"><strong>Good design</strong> is obvious</div>
+                   <div class="m1col2">Great design is transparent</div>
+                   <div class="m1col3"><strong>About Joe©</strong> graphic designer,digital literacy teacher</div>
+                   <div class="m1col4">
+                    <div class="m1c4row1">SHOW ALL</div>
+                    <div class="m1c4row2">DESIGN</div>
+                    <div class="m1c4row3">CODE</div>
+                    <div class="m1c4row4">ART</div>
+                   </div>    
+                   <div class="m1col5">
+                          <div class="m1c5col1">
+                            <div ><img class="fig4" src="12-min.jpg" alt="12-min"></div>
+                            <div ><img class="fig5" src="2-min.jpg" alt="2-min"></div>
+                          </div>
+                          <div class="m1c5col1">
+                            <div ><img class="fig5" src="2-min.jpg" alt="2-min"></div>
+                            <div ><img class="fig5" src="2-min.jpg" alt="2-min"></div>
+                            <div ><img class="fig5" src="2-min.jpg" alt="2-min"></div>
+                            </div>
+                          <div class="m1c5col1">
+                            <div ><img class="fig5" src="2-min.jpg" alt="2-min"></div>
+                            <div ><img class="fig4" src="12-min.jpg" alt="12-min"></div>
+                            
+                          </div>
+                   </div> 
+            </main>
+            <section class="sec4">
+                <div class="img3"></div>
+                <div class="s4col1">
+                    <div class="s4c1row1"><img src="globe.png" alt="globe"></div>
+                    <div class="s4c1row2">Unique customers:</div>
+                    <div class="s4c1row3">3519+</div>
+                </div>
+                <div class="s4col1">
+                    <div class="s4c1row1"><img src="check.png" alt="check"></div>
+                    <div class="s4c1row2">Completed projects:</div>
+                    <div class="s4c1row3">3519+</div>
+                </div>
+                <div class="s4col1">
+                    <div class="s4c1row1"><img src="diamond1.png" alt="diamond"></div>
+                    <div class="s4c1row2">Happy users:</div>
+                    <div class="s4c1row3">3519+</div>
+                </div>
+                <div class="s4col1">
+                    <div class="s4c1row1"><img src="trophy1.png" alt="trophy"></div>
+                    <div class="s4c1row2">Honors and awards:</div>
+                    <div class="s4c1row3">3519+</div>
+                </div>
+            </section>
+            <section class="sec5">
+                <div class="s5row1">Flexible <strong>Pricing</strong>Plans</div>
+                <div class="s5row2">Dolor sit Molitia harum ea ut eaque veiit</div>
+                <div class="s5row3">
+                        <div class="s5r3col">
+                            <div class="s5r3crow1">Trial version</div>
+                            <div class="s5r3crow2">Lorem ipsum doior sit amet consectetur</div>
+                            <div class="s5r3crow2">adopsicing elit</div>
+                            <div class="s5r3crow4">free</div>
+                            <div class="s5r3crow5">500 gb drive space</div>
+                            <div class="s5r3crow5">Unlimited messages</div>
+                            <div class="s5r3crow5 opa">Free Email adress</div>
+                            <div class="s5r3crow5 opa">Friendly support</div>
+                            <div class="s5r3crow9"><strong>DOWNLOAD</strong></div>
+                        </div>
+                        <div class="s5r3col">
+                            <div class="s5r3crow1">Regular</div>
+                            <div class="s5r3crow2">Lorem ipsum doior sit amet consectetur</div>
+                            <div class="s5r3crow2">adopsicing elit</div>
+                            <div class="s5r3crow4">$19/Month</div>
+                            <div class="s5r3crow5">500 gb drive space</div>
+                            <div class="s5r3crow5">Unlimited messages</div>
+                            <div class="s5r3crow5 ">Free Email adress</div>
+                            <div class="s5r3crow5 opa">Friendly support</div>
+                            <div class="s5r3crow9"><strong>PURCHASE</strong></div>
+                        </div>
+                        <div class="s5r3col">
+                            <div class="s5r3crow1">Extended</div>
+                            <div class="s5r3crow2">Lorem ipsum doior sit amet consectetur</div>
+                            <div class="s5r3crow2">adopsicing elit</div>
+                            <div class="s5r3crow4">$29/Month</div>
+                            <div class="s5r3crow5">500 gb drive space</div>
+                            <div class="s5r3crow5">Unlimited messages</div>
+                            <div class="s5r3crow5">Free Email adress</div>
+                            <div class="s5r3crow5">Friendly support</div>
+                            <div class="s5r3crow9"><strong>PURCHASE</strong></div>
+                        </div>
+                </div>
+            </section>
+            <section class="sec5">
+
+            </section>
+
+    </article>
+</body>
+</html>
