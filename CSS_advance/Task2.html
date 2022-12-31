@@ -4,553 +4,247 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advance 2</title>
-    <style>
-            *{
-                box-sizing: border-box;
-                padding: 0px;
-                margin: 0px;
-            }
-           .head{
-            display: flex;
-            background-color: #FBFAFF;
-            width: 100%;
-           } 
-           .fig1{
-               padding-left: 90px;
-               width:35%;
-           }
-           nav{
-            display: flex;
-            justify-content: space-evenly;
-            width:50%;
-            align-items: center;
-            padding-left: 250px;
-            }
-            .fig2{
-                padding-top: 10px;
-            }
-            .sec1{
-                display:flex;
-                width:100%;
-                height: 70vh;
-                background-color: #222342;
-                position: relative;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                background-image: url("img-1.jpg") ;
-                background-size: 100% 100%;
-                background-repeat: no-repeat;
-                opacity: 0.9;
-                position: relative;
-                background-blend-mode: multiply;
-            }
-            .col1{
-                font-size:40px;
-                color: #f7f7f0;
-            }
-            .col2{
-                font-size: 10px;
-                color: #f7f7f0;
-                padding-top: 10px;
-            }
-            .main{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-            }
-            .s1box1{
-                margin-right: 20px;
-                margin-top: 20px;
-                color: #f7f7f0;
-                border: 2px solid white;
-                border-radius: 10px;
-                padding: 4px;
-                }
-            .s1box1:hover{
-                background-color: #d0a904;
- 
-            }
-            .s1box2:hover{
-                background-color: #d0a904;
- 
-            }
-            .s1box2{
-                margin-right: 20px;
-                margin-top: 20px;
-                color: #f7f7f0;
-                border: 2px solid white;
-                border-radius: 10px;
-                padding: 4px;
-            }
-            .sec2{
-                display: flex;
-                width:100%;
-                background-color: #f5f4fa;
-                padding-left: 50px;
-                padding-bottom: 50px;
-            }
-            .s2box1{
-                display:flex;
-                flex-direction: column;
-                color: #50425d;
-                width: 40%;
-                justify-content: center;
-            }
-            .s2b1box1{
-                padding-left: 90px;
-                padding-top: 40px;
-                font-size: 40px;
-            }
-            .s2b1box2{
-                padding-left: 90px;
-                padding-right: 70px;
-                padding-top: 15px;
-                font-size: 10px;
-            }
-            .s2b1box3{
-                padding-left: 90px;
-                padding-top: 15px;
-            }
-            .s2box2{
-                width:60%;
-                padding-top: 60px;
-                padding-left: 100px;
-            }
-            .fig3{
-                width: 70%;
-                height: 100%;
-            }
-            .sec3{
-                display:flex;
-                width:100%;
-                height: 70vh;
-                background-color: #222342;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                background-image: url("img-2.jpg") ;
-                background-size: 100% 100%;
-                background-repeat: no-repeat;
-                opacity: 0.9;
-                position: relative;
-                background-blend-mode: multiply;
-            }
-            .s3main{
-                display: flex;
-                width: 80%;
-                justify-content: center;
-                align-items: center;
-            }
-            .s3row2{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                color: #f7f7f0;
-                padding-top: 40px;
-            }
-            .s3r1col2{
-                font-size: 15px;
-                padding-left: 20px;
-                padding-top: 20px;
-
-            }
-            .s3r1col3{
-                font-size: 10px;
-                padding-left: 90px;
-                padding-top: 20px;
-            }
-            .s3r3{
-                color: #f7f7f0;
-                border: 2px solid white;
-                border-radius: 10px;
-                padding: 4px;
-                
-                margin-top: 40px;
-            }
-            .s3r3:hover{
-                background-color: #d0a904;
-            }
-            .main1{
-                display: flex;
-                background-color: #f5f4fa;
-                width: 100%;
-                flex-direction: column;
-                padding-left: 120px;
-            }
-            .m1col1{
-                    padding-top: 40px;
-                    font-size: 40px;
-                    color: #474a5b;
-
-            }
-            .m1col2{
-                    font-size: 40px;
-                    color: #474a5b;
-            }
-            .m1col3{
-                padding-top: 20px;
-                font-size: 15px;
-                color: #474a5b;
-            }
-            .m1col4{
-                padding-top: 60px;
-                display: flex;
-                padding-left: 80px;
-                justify-content: space-between;
-                width:35% ;
-
-            }
-            .m1col5{
-                display: flex;
-                padding-top: 30px;
-                width: 90%;
-            }
-            .m1c5col1{
-                width: 30%;
-                margin-right: 15px;
-            }
-
-             .fig4{
-                width:100%;
-                height:44.6vh;
-                margin-bottom:15px;
-             }
-             .fig5{
-                width:100%;
-                height: 21vh;
-                margin-bottom: 15px;
-
-             }
-             .sec4{
-                display:flex;
-                width:100%;
-                height: 40vh;
-                background-color: #222342;
-                position: relative;
-                justify-content: center;
-                align-items: center;
-                background-image: url("img-4.jpg") ;
-                background-size: 100% 100%;
-                background-repeat: no-repeat;
-                opacity: 0.9;
-                position: relative;
-                background-blend-mode: multiply;
-             }
-             .s4col1{
-                display: flex;
-                flex-direction:column ;
-                align-items: center;
-                justify-content:space-around;
-                width: 20%;
-            }
-            .s4c1row1{
-                border-radius: 50%;
-            }
-            .s4c1row2{
-                padding-top: 10px;
-                color:white;
-            }
-            .s4c1row3{
-                color: white;
-                font-size: 30px;
-            }
-            .s4c1row2:hover{
-                background-color: #d0a904;
-            }
-            .s4c1row3:hover{
-                background-color: #d0a904;
-            }
-            .sec5{
-                display:flex;
-                flex-direction: column;
-                background-color: #f5f4fa;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                color: #464156;
-                margin-bottom:30px
-            }
-            .s5row1{
-                padding-top: 40px;
-                font-size: 40px;
-                padding-bottom: 40px;
-            }
-            .s5row3{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width:90%;
-                margin-top: 30px;
-            }
-            .s5r3col{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                border: 2px solid #fbfaff;
-                width: 30%;
-                background-color: #fbfaff;
-                margin-right: 15px;
-
-            }
-            .s5r3crow1{
-                font-size: 30px;
-            }
-            .s5r3crow2{
-                 font-size: 10px;
-                 padding-top: 10px;
-            }
-            .s5r3crow4{
-                font-size: 40px;
-                padding-bottom: 15px;
-            }
-            .s5r3crow5{
-                font-size: 15px;
-                padding-bottom: 10px;
-            }
-             .opa{
-                opacity: 0.2;
-             }
-             .s5r3crow9{
-                border: 2px solid black;
-                border-radius: 20px;
-                padding: 10px;
-                margin-bottom: 15px;
-             }
-              .s5r3crow9:hover{
-                background-color: #d0a904;
-                color: #f7f7f0;
-              }
-             /* .sec6{
-                display:flex;
-                width:100%;
-                height: 60vh;
-                background-color: #222342;
-                background-image: url("img-3.jpg") ;
-                background-size: 100% 100%;
-                background-repeat: no-repeat;
-                opacity: 0.9;
-                position: relative;
-                background-blend-mode: multiply;
-                flex-direction: column;
-                justify-content: center;
-             }
-             .s6row1{display: flex;
-                height:20%;
-                width: 40%;
-        
-             }
-             .s6r1col1{
-                font-size: 35px;
-                color: white;
-                padding: 60px;
-                padding-left: 60px; 
-                align-items: flex-end;
-            }
-            .s6r1col2{
-                display: flex;
-                width: 60%;
-
-            }
-
-             
-             .sec6img{
-                height: 15%;
-                width: 40%;
-                background-color: #3a376c;
-            }
-             .sec6img2{
-                height: 15%;
-                width: 40%;
-                background-color: #3a376c;
-             }
-             .sec6img:hover{
-                background-color: #d0a904;
-             }
-             .sec6img2:hover{
-                background-color: #d0a904;
-             }
-             .s6row2{
-                font-size: 10px;
-                color: white;
-             }*/
-            
-            
-    </style>
+    <title>Adv2</title>
+    <link rel="stylesheet" href="./advnace.css">
 </head>
 <body>
     <article>
-        <header class="head">
-            <figure class="fig1"><img src="head_logo.jpg" alt="photo"></figure>
+        <header>
             <nav>
-                <div>HOME</div>
-                <div>ABOUT</div>
-                <div>SERVICES</div>
-                <div>PORTFOLIO</div>
-                <div>PRICE</div>
-                <div>BLOG</div>
+                <figure class="fig1"><img src="head_logo.jpg" alt="photo"></figure>
+                <ul class="list">
+                    <li id="li1">HOME</li>
+                    <li id="li1">ABOUT</li>
+                    <li id="li1">SERVICES</li>
+                    <li id="li1">PORTFOLIO</li>
+                    <li id="li1">PRICE</li>
+                    <li id="li1">BLOG</li>
+                </ul>
+                <figure class="fig2"><img src="mail.jpg" alt="photo"></figure>
             </nav>
-            <figure class="fig2"><img src="mail.jpg" alt="photo"></figure>
-        </header>
-        <section class="sec1">
-            <div class="img1"></div>
-                <div class="col1">We Will <strong>Make</strong>Your <strong>Business</strong></div>
-                <div class="col1">Great Again</div>
-                <div class="col2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum asperiores nulla totam vel error assumenda aliquid iste corrupti </div>
-                <div class="main">
-                <div class="s1box1">CONTACT US</div>
-                <div class="s1box2">DISCOVER NOW</div>
+        </header> 
+        <section class="flex sec1">
+            <h2 class="s1">We Will <strong>Make</strong> Your<strong> Business</strong></h2>
+            <h2 class="s1">Great Again</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam enim nisi ha</p>
+            <p><button class="btn1">Contact Us</button>
+            <button class="btn1">Discover Now</button>
+            </p>
+            <img src="darrow.png" alt="darrrow" id="darrow">
+        </section>
+        <section class="flexwhite sec2">
+            <div class="divs2">
+                <h2 class="s2">Hello <strong>World</strong></h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Eligendi nihil quasi ab veritatis, illo ex praesentium </p>
+                <p>Veniam  consectetur nisi culpa debitis libero deleniti!</p>
+                <ul class="list2">
+                    <li>
+                        <img src="i-diamond_b.svg" alt="diamond" class="fig3">
+                        Exploring your area of activity
+                    </li>
+                    <li><img src="i-wallet_b.svg" alt="wallet" class="fig3">
+                         Competitive Analysis
+                    </li>
+                    <li><img src="i-trophy_b.svg" alt="trophy" class="fig3">
+                        Do the work in time
+                    </li>
+                </ul>
+            </div>
+            <img src="img-3.jpg" alt="img3" class="fig4">
+        </section> 
+        <section class="flex sec3">
+            <h2 class="s1">Some of our <strong>best service</strong></h2>
+            <h2 class="s1">to solve your problems</h2>
+            <ul class="service">
+                <li id="li2">
+                    <img src="i-message.svg" alt="message" class="fig5">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ducimus distinctio id, tempora quis sequi.</p>
+                </li>
+                <li id="li2">
+                    <img src="i-feature.svg" alt="feature" class="fig5">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ducimus distinctio id, tempora quis sequi.</p>
+                </li>
+                <li id="li2">
+                    <img src="i-sketch.svg" alt="sketch" class="fig5">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ducimus distinctio id, tempora quis sequi.</p>
+                </li>
+            </ul>
+            <button>Order a Service</button>
+        </section>
+        <section class="flexwhite sec4">
+            <h2 class="s3"><strong>Good design</strong> is obvious</h2>
+            <h2 class="s3"><strong>Great design </strong>is transparent</h2>
+            <p class="p1"><strong>About Joe©</strong> graphic designer,digital literacy teacher</p>
+            <ul class="lists4">
+                <li>SHOW ALL</li>
+                <li>DESIGN</li>
+                <li>CODE</li>
+                <li>ART</li>
+            </ul>
+            <div class="figure">
+                <div class="col">
+                    <img class="fig6" src="12-min.jpg" alt="12-min">
+                    <img class="fig7" src="2-min.jpg" alt="2-min">
+                </div>
+                <div class="col">
+                      <img class="fig7" src="2-min.jpg" alt="2-min">
+                      <img class="fig7" src="2-min.jpg" alt="2-min">
+                      <img class="fig7" src="2-min.jpg" alt="2-min">
+                </div>
+                <div class="col">
+                    <img class="fig7" src="2-min.jpg" alt="2-min">
+                    <img class="fig6" src="12-min.jpg" alt="12-min">
+                </div>
             </div>
         </section>
-        <section class="sec2">
-            <div class="s2box1">
-                <div class="s2b1box1">Hello <strong>World</strong></div>
-                <div class="s2b1box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptates hic ea, aliquid, accusamus blanditiis ullam repudiandae deleniti distinctio quidem iste qui tenetur laborum! Odio necessitatibus quidem molestias quae provident!</div>
-                <div class="s2b1box3"><img src="diamond.png" alt="diamond">Exploring the area of activity</div>
-                <div class="s2b1box3"><img src="wallet.png" alt="wallet">Competitive analysis</div>
-                <div class="s2b1box3"><img src="trophy.png" alt="trophy">Competitive analysis</div>
+        <section class="flex sec5">
+            <ul class="uls5">
+                <li class="li3">
+                    <img src="i-team.svg" alt="i-team" class="fig8">
+                    <p class="ps4">Unique customer</p>
+                    <p class="ps5">3519+</p>
+                </li>
+                <li class="li3">
+                    <img src="i-shield.svg" alt="i-team" class="fig8">
+                    <p class="ps4">Completed projects</p>
+                    <p class="ps5">3519+</p>
+                </li>
+                <li class="li3">
+                    <img src="i-diamond.svg" alt="i-team" class="fig8">
+                    <p class="ps4">Happy users</p>
+                    <p class="ps5">3519+</p>
+                </li>
+                <li class="li3">
+                    <img src="i-trophy.svg" alt="i-team" class="fig8">
+                    <p class="ps4">Honors and awards</p>
+                    <p class="ps5">3519+</p>
+                </li>
+            </ul>
+        </section>
+        <section class="flexwhite sec6">
+                <h2 class="s3">Flexible <strong>Pricing</strong> Plans</h2>
+                <ul class="uls6">
+                    <li class="lis6">
+                        <h2>Trial version</h2> 
+                        <p class="ps6">Lorem ipsum dolor sit amet</p>
+                        <p class="ps6">consectetur adipisicing elit.</p>
+                        <div class="ds6"><strong>free</strong></div>
+                        <p class="ps6">500gb drive space</p>
+                        <p class="ps6">Unlimited messages</p>
+                        <p class="opa ps6">Free Email address</p>
+                        <p class="opa ps6">Friendly support</p>
+                        <button class="btns6">Download</button>
+                    </li>
+                    <li class="lis6">
+                        <h2>Trial version</h2> 
+                        <p class="ps6">Lorem ipsum dolor sit amet</p>
+                        <p class="ps6">consectetur adipisicing elit.</p>
+                        <div class="ds6"><strong>$19/Month</strong></div>
+                        <p class="ps6">500gb drive space</p>
+                        <p class="ps6">Unlimited messages</p>
+                        <p class="ps6">Free Email address</p>
+                        <p class="opa ps6">Friendly support</p>
+                        <button class="btns6">Download</button>
+                    </li>
+                    <li class="lis6">
+                        <h2>Trial version</h2> 
+                        <p class="ps6">Lorem ipsum dolor sit amet</p>
+                        <p class="ps6">consectetur adipisicing elit.</p>
+                        <div class="ds6"><strong>$29/Month</strong></div>
+                        <p class="ps6">500gb drive space</p>
+                        <p class="ps6">Unlimited messages</p>
+                        <p class="ps6">Free Email address</p>
+                        <p class="ps6">Friendly support</p>
+                        <button class="btns6">Download</button>
+                    </li>
+                </ul>
+        </section>
+        <section class="flex sec7">
+            <div class="ds7">
+                <h2 class="s2 s7">Testimonial About US</h2>
+                <img src="larrow.png" alt="larrow" class="fig9">
+                <img src="rarrow.png" alt="rarrow" class="fig10">
             </div>
-            <div class="s2box2"><img  class="fig3" src="img-3.jpg" alt="img-3"></div>
-            </section>
-            <section class="sec3">
-                <div class="img2"></div>
-                <div class="col1">Some of our <strong>best services</strong></div>
-                <div class="col1">to solve your problems</div>
-                <div class="s3main">
-                    <div class="s3row2">
-                        <div class="s3r1col1"><img src="plane.png" alt="plane"></div>
-                        <div class="s3r1col2">Digital Marketing</div>
-                        <div class="s3r1col3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem magnam numquam reprehenderit, tenetur sed nesciunt officiis cupiditate doloribus fuga </div>
+            <p class="ps7">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <div class="ds7">
+                <div class="d2s7">
+                    <img src="t-1.jpeg" alt="t-1" class="fig11">
+                    <p class="p7"><strong>Robert Newmen</strong></p>
+                    <p class="p7"><strong>Microsoft Corporation</strong></p>
+                    <p class="p7">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor, sit amet consectetur </p> 
+                    <p class="p7">adipisicing elit. Fuga odio ratione mollitia ipsum Lorem ipsum dolor sit amet consectetur Lorem</p>
+                </div>
+                <div class="d2s7">
+                    <img src="t-2.jpeg" alt="t-1" class="fig11">
+                    <p class="p7"><strong>Robert Newmen</strong></p>
+                    <p class="p7"><strong>Space X</strong></p>
+                    <p class="p7">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor, sit amet consectetur </p> 
+                    <p class="p7">adipisicing elit. Fuga odio ratione mollitia ipsum Lorem ipsum dolor sit amet consectetur Lorem</p>
+                </div>
+            </div>
+        </section>
+        <section class="sec8">
+            <h2 class="s3">Latest <strong>blog</strong> posts</h2>
+            <p class="ps8">Lorem ipsum dolor sit amet consectetur adipisicing </p>
+            <div class="d1s8"><div class="ds8">
+                <img src="img-2.jpg" alt="img-2" class="fig12">
+                <p class="p1s8"><strong>Fuga ab quisquam culpa aliquid wius vitae</strong></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, ipsam veritatis iure officia provident aliquid, rerum</p>
+                <button class="btns8">READ MORE</button>
+            </div>
+            <div class="ds8">
+                <img src="img-2.jpg" alt="img-2" class="fig12">
+                <p class="p1s8"><strong>Fuga ab quisquam culpa aliquid wius vitae</strong></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, ipsam veritatis iure officia provident aliquid, rerum</p>
+                <button class="btns8">READ MORE</button>
+            </div>
+            <div class="ds8">
+                <img src="img-2.jpg" alt="img-2" class="fig12">
+                <p class="p1s8"><strong>Fuga ab quisquam culpa aliquid wius vitae</strong></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, ipsam veritatis iure officia provident aliquid, rerum</p>
+                <button class="btns8">READ MORE</button>
+            </div></div>
+        </section>
+        <footer >
+            <img src="logo-footer.jpg" alt="logo">
+            <div class="f1">
+                <ul class="fl">
+                    <li>
+                        <h3>Company</h3>
+                    </li>
+                    <li>ABOUT</li>
+                    <li>SUPPORT</li>
+                    <li>PRESS</li>
+                    <li>LEGAL & PRIVACY</li>
+                </ul>
+                <ul class="fl">
+                    <li>
+                        <h3>Quick Links</h3>
+                    </li>
+                    <li>NEWS</li>
+                    <li>CONTACT US</li>
+                    <li>FAQ</li>
+                </ul>
+                <ul class="fl">
+                    <li>
+                        <h3>Social</h3>
+                    </li>
+                    <li>FACEBOOK</li>
+                    <li>GOOGLE</li>
+                    <li>TWITTER</li>
+                    <li>INSTAGRAM</li>
+                </ul>
+                <div id="sl">
+                    <h3 class="hf" >Subscribe newsletter</h3>
+                    <div class="fi">
+                    <input id="in" type="text" placeholder="email">
+                    <button id="nbtn"><img src="i-message_w.svg" alt="msg" class="figf"></button>
                     </div>
-                    <div class="s3row2">
-                        <div class="s3r1col1"><img src="setting.png" alt="setting"></div>
-                        <div class="s3r1col2">Web Development</div>
-                        <div class="s3r1col3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem magnam numquam reprehenderit, tenetur sed nesciunt officiis cupiditate doloribus fuga </div>
-                    </div>
-                    <div class="s3row2">
-                        <div class="s3r1col1"><img src="sketch.png" alt="sketch"></div>
-                        <div class="s3r1col2">UI/UX Design</div>
-                        <div class="s3r1col3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem magnam numquam reprehenderit, tenetur sed nesciunt officiis cupiditate doloribus fuga </div>
-                    </div>
                 </div>
-                <div class="s3r3">ORDER A SERVICE</div>
-            </section>
-            <main class="main1">
-                   <div class="m1col1"><strong>Good design</strong> is obvious</div>
-                   <div class="m1col2">Great design is transparent</div>
-                   <div class="m1col3"><strong>About Joe©</strong> graphic designer,digital literacy teacher</div>
-                   <div class="m1col4">
-                    <div class="m1c4row1">SHOW ALL</div>
-                    <div class="m1c4row2">DESIGN</div>
-                    <div class="m1c4row3">CODE</div>
-                    <div class="m1c4row4">ART</div>
-                   </div>    
-                   <div class="m1col5">
-                          <div class="m1c5col1">
-                            <div ><img class="fig4" src="12-min.jpg" alt="12-min"></div>
-                            <div ><img class="fig5" src="2-min.jpg" alt="2-min"></div>
-                          </div>
-                          <div class="m1c5col1">
-                            <div ><img class="fig5" src="2-min.jpg" alt="2-min"></div>
-                            <div ><img class="fig5" src="2-min.jpg" alt="2-min"></div>
-                            <div ><img class="fig5" src="2-min.jpg" alt="2-min"></div>
-                            </div>
-                          <div class="m1c5col1">
-                            <div ><img class="fig5" src="2-min.jpg" alt="2-min"></div>
-                            <div ><img class="fig4" src="12-min.jpg" alt="12-min"></div>
-                            
-                          </div>
-                   </div> 
-            </main>
-            <section class="sec4">
-                <div class="img3"></div>
-                <div class="s4col1">
-                    <div class="s4c1row1"><img src="globe.png" alt="globe"></div>
-                    <div class="s4c1row2">Unique customers:</div>
-                    <div class="s4c1row3">3519+</div>
-                </div>
-                <div class="s4col1">
-                    <div class="s4c1row1"><img src="check.png" alt="check"></div>
-                    <div class="s4c1row2">Completed projects:</div>
-                    <div class="s4c1row3">3519+</div>
-                </div>
-                <div class="s4col1">
-                    <div class="s4c1row1"><img src="diamond1.png" alt="diamond"></div>
-                    <div class="s4c1row2">Happy users:</div>
-                    <div class="s4c1row3">3519+</div>
-                </div>
-                <div class="s4col1">
-                    <div class="s4c1row1"><img src="trophy1.png" alt="trophy"></div>
-                    <div class="s4c1row2">Honors and awards:</div>
-                    <div class="s4c1row3">3519+</div>
-                </div>
-            </section>
-            <section class="sec5">
-                <div class="s5row1">Flexible <strong>Pricing</strong>Plans</div>
-                <div class="s5row2">Dolor sit Molitia harum ea ut eaque veiit</div>
-                <div class="s5row3">
-                        <div class="s5r3col">
-                            <div class="s5r3crow1">Trial version</div>
-                            <div class="s5r3crow2">Lorem ipsum doior sit amet consectetur</div>
-                            <div class="s5r3crow2">adopsicing elit</div>
-                            <div class="s5r3crow4">free</div>
-                            <div class="s5r3crow5">500 gb drive space</div>
-                            <div class="s5r3crow5">Unlimited messages</div>
-                            <div class="s5r3crow5 opa">Free Email adress</div>
-                            <div class="s5r3crow5 opa">Friendly support</div>
-                            <div class="s5r3crow9"><strong>DOWNLOAD</strong></div>
-                        </div>
-                        <div class="s5r3col">
-                            <div class="s5r3crow1">Regular</div>
-                            <div class="s5r3crow2">Lorem ipsum doior sit amet consectetur</div>
-                            <div class="s5r3crow2">adopsicing elit</div>
-                            <div class="s5r3crow4">$19/Month</div>
-                            <div class="s5r3crow5">500 gb drive space</div>
-                            <div class="s5r3crow5">Unlimited messages</div>
-                            <div class="s5r3crow5 ">Free Email adress</div>
-                            <div class="s5r3crow5 opa">Friendly support</div>
-                            <div class="s5r3crow9"><strong>PURCHASE</strong></div>
-                        </div>
-                        <div class="s5r3col">
-                            <div class="s5r3crow1">Extended</div>
-                            <div class="s5r3crow2">Lorem ipsum doior sit amet consectetur</div>
-                            <div class="s5r3crow2">adopsicing elit</div>
-                            <div class="s5r3crow4">$29/Month</div>
-                            <div class="s5r3crow5">500 gb drive space</div>
-                            <div class="s5r3crow5">Unlimited messages</div>
-                            <div class="s5r3crow5">Free Email adress</div>
-                            <div class="s5r3crow5">Friendly support</div>
-                            <div class="s5r3crow9"><strong>PURCHASE</strong></div>
-                        </div>
-                </div>
-            </section>
-            /*<section class="sec6">
-                      <div class="s6row1">
-                        <div class="s6r1col1"><strong>Testimonials </strong>About US</div>
-                        <div class="s6r1col2"><img class="sec6img" src="larrow.png" alt="larrow"><img class="sec6img2" src="rarrow.png" alt="rarrow"></div>
-                      </div>                 
-                      <div class="s6row2">Lorem ipsum dolor sit amet consectetur adipisicing </div>
-                      <div class="s6row3">
-                        <div class="s6r3col1">
-                            <div class="s6r3c1row1"></div>
-                            <div class="s6r3c1row1"></div>
-                            <div class="s6r3c1row1"></div>
-                            <div class="s6r3c1row1"></div>
-                        </div>
-                        <div class="s6r3col2">
-                             <div class="s6r3c1row2"></div>
-                             <div class="s6r3c1row2"></div>
-                             <div class="s6r3c1row2"></div>
-                             <div class="s6r3c1row2"></div>
-                        </div>
+            </div>
+        </footer>
 
-                             
-                        </div>
-            </section>*/
-
-    </article>
+    </article>    
 </body>
 </html>
