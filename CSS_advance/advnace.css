@@ -243,7 +243,7 @@ button:hover{
 }
 .sec7{
     background-image: url("img-3.jpg");
-    height:80vh;
+    height:80%;
     align-items: flex-start;
     padding: 60px;
 }
@@ -328,7 +328,6 @@ button:hover{
 }
 .btns8{
     width: 50%;
-    height: 50px;
     margin: 20px 100px;
     color: rgb(58,55,108);
     border-color: rgb(58,55,108);
